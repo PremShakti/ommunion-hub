@@ -1,0 +1,52 @@
+/* @keyframes shine {
+    0% {
+      background-position: -100%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+  .shining-text {
+    background: linear-gradient(90deg, #3b82f6, #ffffff, #3b82f6);
+    background-size: 400% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s linear infinite;
+  } */
+
+  .wave-text {
+    display: flex;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+  
+  .wave-text span {
+    display: inline-block;
+    font-size: 2.25rem; /* Default (text-4xl) */
+    animation: wave 3s ease-in-out infinite;
+  }
+  
+  /* Responsive font sizes */
+  @media (min-width: 768px) {
+    .wave-text span {
+      font-size: 3rem; /* md:text-5xl */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .wave-text span {
+      font-size: 3.75rem; /* lg:text-6xl */
+    }
+  }
+  
+  /* Wave Animation */
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
