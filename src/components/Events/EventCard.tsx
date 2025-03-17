@@ -18,13 +18,13 @@ const EventCard: React.FC<EventCardPropsTypes> = ({
   const Formateddate = new Date(date); // Example date
   const formattedDate = format(Formateddate, "MMMM d, yyyy • h:mm a");
   return (
-    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow transition duration-300">
+    <div className="    bgevencontainer rounded-lg border border-gray-200 overflow-hidden shadow-sm hover:shadow transition duration-300">
       <div className="bg-blue-50 px-4 py-2 border-b border-gray-200">
         <span className="inline-block px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">
           {category}
         </span>
       </div>
-      <div className="p-6">
+      <div className="bgimgevent p-6">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
         <div className="flex items-center text-gray-600 text-sm mb-2">
           <svg
