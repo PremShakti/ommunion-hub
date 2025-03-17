@@ -4,12 +4,9 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section id="home" className="min-h-screen pt-5 lg:pt-0">
+    <section id="home" className="bgimg min-h-screen pt-5 lg:pt-0">
       <div className="px-1 py-12 md:py-20 lg:py-24 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          {/* <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 shining-text">
-  Welcome to Communion
-</h1> */}
           <div className="wave-container flex items-center justify-center flex-wrap w-full">
             <WaveText text="Welcome" delayStart={0} />
             <WaveText text=" to " delayStart={0.6} />
@@ -91,7 +88,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="bg-gray-50 py-16">
+      <div className="bg-blue-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -187,23 +184,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className="py-16 px-4">
-      <div className="max-w-5xl mx-auto bg-blue-600 rounded-xl text-white p-8 md:p-12 text-center shadow-lg">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Join Our Community?</h2>
-        <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-          Start exploring events, connecting with people, and building meaningful relationships across faiths and interests.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#events" className="bg-white text-blue-600 hover:bg-blue-50 py-3 px-8 rounded-lg font-medium transition duration-300">
-            Explore Events
-          </a>
-          <a href="#about" className="bg-blue-700 hover:bg-blue-800 text-white py-3 px-8 rounded-lg font-medium transition duration-300">
-            Learn More
-          </a>
-        </div>
-      </div>
-    </div> */}
     </section>
   );
 };
