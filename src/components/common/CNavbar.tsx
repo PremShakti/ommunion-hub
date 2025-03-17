@@ -2,21 +2,25 @@ import { Link, useLocation } from "react-router-dom";
 import { SidebarTrigger } from "../ui/sidebar";
 
 import { navlist } from "@/lib/nablist";
-import { PanelLeftIcon } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const CNavbar = () => {
   const location = useLocation();
   return (
-    <div className=" sticky top-0 left-0 z-30 bg-blue-500 ">
-      <nav className=" container  text-white flex justify-between items-center p-4">
+    <div className="navbar sticky top-0 left-0 z-30  ">
+      <nav className=" container  text-blue-600 flex justify-between items-center p-4">
         <div className="w-full flex items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="sm:hidden">
               <SidebarTrigger>
-                <PanelLeftIcon />
+                <Menu />
               </SidebarTrigger>
             </div>
-            <h1 className="text-2xl font-[700]">Communion App</h1>
+
+            <img src="/logo-c.png" alt="logo" className="w-4 md:w-10 " />
+            <h1 className=" text-lg sm:text-xl md:text-2xl font-[700]">
+              <Link to={"/"}>Communion Hub</Link>
+            </h1>
           </div>
           <div>
             <div className="flex items-center gap-4">
@@ -30,7 +34,7 @@ const CNavbar = () => {
                     <Link
                       to={item.url}
                       key={i}
-                      className={`${
+                      className={` border-blue-600 ${
                         active
                           ? " border-b-2 "
                           : " hover:border-b-2 border-dashed"

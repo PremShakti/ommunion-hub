@@ -23,6 +23,7 @@
   
   .wave-text span {
     display: inline-block;
+    color: #155dfc;
     font-size: 2.25rem; /* Default (text-4xl) */
     animation: wave 3s ease-in-out infinite;
   }
